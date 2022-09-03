@@ -44,10 +44,10 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	botCallName := "!ai_image"
+	botCallStr := "!ai_image"
 
 	if strings.Index(strings.TrimSpace(m.Content), botCallStr) == 0 {
-		imageToCreateStr := m.Content[len(botCallName):]
+		imageToCreateStr := m.Content[len(botCallStr):]
 
 		// TODO:
 		// call the process to create the image with imageToCreateStr as an argument

@@ -44,7 +44,7 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	botCallStr := "!ai_image"
+	botCallName := "!ai_image"
 
 	if strings.Index(strings.TrimSpace(m.Content), botCallStr) == 0 {
 		imageToCreateStr := m.Content[len(botCallName):]

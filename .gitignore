@@ -1,0 +1,5 @@
+config.json
+go-txt2img-discord-bot
+**/main
+**/.env
+**/nohup.out

@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 )
 
+var CONF_FILE string = "/home/aaron/git/go-txt2img-discord-bot/config.json"
 var (
 	Token     string
 	BotPrefix string
@@ -20,7 +21,7 @@ type configStruct struct {
 func ReadConfig() error {
 	fmt.Println("Reading config file...")
 
-	file, err := ioutil.ReadFile("./config.json")
+	file, err := ioutil.ReadFile(CONF_FILE)
 
 	if err != nil {
 		fmt.Println(err.Error())

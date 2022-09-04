@@ -1,5 +1,15 @@
 # golang text to image discord bot with stable diffusion
 
+[![GitHub version](https://img.shields.io/github/release/jcksnvllxr80/go-txt2img-discord-bot.svg)](lib-release)
+[![GitHub download](https://img.shields.io/github/downloads/jcksnvllxr80/go-txt2img-discord-bot/total.svg)](lib-release)
+[![GitHub stars](https://img.shields.io/github/stars/jcksnvllxr80/go-txt2img-discord-bot.svg)](lib-stars)
+[![GitHub issues](https://img.shields.io/github/issues/jcksnvllxr80/go-txt2img-discord-bot.svg)](lib-issues)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](lib-licence)
+
+## Image of project
+
+![ai_image discord bot](./ai_image.png "Image of project")
+
 ## high-level
 
 1. send request to listening bot in discord with description of image
@@ -19,4 +29,16 @@
 
 [tutorial](https://dev.to/aurelievache/learning-go-by-examples-part-4-create-a-bot-for-discord-in-go-43cf) to learn how to create a golang discord bot
 
+## running the bot 
 
+change dir to where `main.go` was compiled
+
+```bash
+./main
+```
+
+## activating the bot from discord
+
+```text
+@ai_image rick james with a technicolor dreamcoat in space
+```

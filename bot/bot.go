@@ -44,15 +44,15 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	botCallStr := "!ai_image"
+	botCallStr := "<@1015747298719973459>"
+	fmt.Println("Message content is: " + m.Content)  // temp debug logging
 
-	if strings.Index(strings.TrimSpace(m.Content), botCallStr) == 0 {
-		imageToCreateStr := m.Content[len(botCallStr):]
-
+	if strings.Index(m.Content, botCallStr) == 0 {
+		imageToCreateStr := strings.TrimLeft(m.Content[len(botCallStr):]," ")
 		// TODO:
 		// call the process to create the image with imageToCreateStr as an argument
 		// get path to process output files
 		// send the created images back in the messageSend
-		_, _ = s.ChannelMessageSend(m.ChannelID, "file upload of " + imageToCreateStr + " image")
+		_, _ = s.ChannelMessageSend(m.ChannelID, "This is a file upload of an image whose description is, \"" + imageToCreateStr + "\".")
 	}
 }

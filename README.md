@@ -29,7 +29,7 @@
 
 [tutorial](https://dev.to/aurelievache/learning-go-by-examples-part-4-create-a-bot-for-discord-in-go-43cf) to learn how to create a golang discord bot
 
-## running the bot 
+## run the bot 
 
 change dir to where `main.go` was compiled
 
@@ -37,7 +37,7 @@ change dir to where `main.go` was compiled
 ./main
 ```
 
-## activating the bot from discord
+## call the bot into action from discord
 
 ```text
 @ai_image rick james with a technicolor dreamcoat in space

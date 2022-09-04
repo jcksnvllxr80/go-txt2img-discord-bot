@@ -118,7 +118,7 @@ func messageHandler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		_, _ = s.ChannelMessageSend(m.ChannelID, "Creating two images... please wait about 15 seconds.")
 		createImageFromText(imageToCreateStr)
 		
-		_, _ = s.ChannelMessageSend(m.ChannelID, "Uploading mages... ")
+		_, _ = s.ChannelMessageSend(m.ChannelID, "Uploading images... ")
 		files, err := ioutil.ReadDir(OUT_DIR)
 		if err != nil {
 			log.Fatal(err)

@@ -1,0 +1,17 @@
+version: "3"
+
+tasks:
+    build:
+        desc: Build the app
+        cmds:
+        - GOFLAGS=-mod=mod go build main.go 
+
+    run: 
+        desc: Run the app
+        cmds:
+        - GOFLAGS=-mod=mod ./main
+
+    gitg: 
+        desc: Show git graph
+        cmds:
+        - GOFLAGS=-mod=mod git log --graph --oneline

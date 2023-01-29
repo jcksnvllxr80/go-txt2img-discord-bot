@@ -1,4 +1,5 @@
 config.json
+*-config.json
 go-txt2img-discord-bot
 **/main
 **/.env
